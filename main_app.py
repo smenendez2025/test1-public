@@ -52,8 +52,6 @@ STOP_WORDS = set([
     "of", "to", "for", "with", "on", "that", "this", "be", "are", "not", "a", "an", "as", "at", "by", "from", "or",
     "if", "must", "should", "not", "all", "any", "el", "la", "los", "las", "un", "una", "unos", "unas"
 ])
-# En main_api.py, al principio del archivo con las otras constantes
-# En main_api.py, al principio del archivo
 
 LANGUAGE_EXTENSION_MAP = {
     # Lenguajes de Backend y Scripting
@@ -97,7 +95,8 @@ LANGUAGE_EXTENSION_MAP = {
 }
 
 # --- 1.Pydantic Models ---
-
+class Usagemesage(BaseModel):
+    pass
 class AttackPatternInfo(BaseModel):
     patternId: str; name: str
 
