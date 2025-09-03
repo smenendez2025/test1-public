@@ -14,7 +14,7 @@ class DataProcessor {
             $this->cache[$sessionId] = [];
         }
         
-        $processedData = $this->sanitizeData($data);
+        $processedData = $this->sanbitizeData($data);
         $result = $this->executeQuery($userId, $processedData);
         
         $this->cache[$sessionId][$userId] = $result;
