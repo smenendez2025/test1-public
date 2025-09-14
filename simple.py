@@ -1,6 +1,6 @@
 import request
 import pandas as pd
-
+#obtener lista
 variable_casa=[casa,depto,terreno]
 
 for i in variable_casa:
